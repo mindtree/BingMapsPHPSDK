@@ -1,0 +1,1993 @@
+<html>
+<head>
+<title>Docs For Class Msft_Bing_Map</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Msft</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../../classtrees_Msft.html" class="menu">class tree: Msft</a> ]
+		  [ <a href="../../elementindex_Msft.html" class="menu">index: Msft</a> ]
+		  	    [ <a href="../../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="ric">
+					<p><a href="../../ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="../../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../../li_Msft.html">Msft</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../Msft/_Msft---Bing---Exception.php.html">		Exception.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---IPersistenceHandler.php.html">		IPersistenceHandler.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---Map---Map.php.html">		Map.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---MySQLPersistenceHandler.php.html">		MySQLPersistenceHandler.php
+		</a><br>
+	  </div><br />
+	subpackage <b>Bing</b><br>  <div class="package">
+			<a href="../../Msft/Bing/_Msft---Bing---Map---GetResults.php.html">		GetResults.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+	Bing<br />	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html">Msft_Bing_IPersistenceHandler</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+	Bing<br />	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Column.html">Msft_Bing_Column</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Entity.html">Msft_Bing_Entity</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Map.html">Msft_Bing_Map</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MapException.html">Msft_Bing_MapException</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html">Msft_Bing_MySQLPersistenceHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Msft_Bing_Map</h1>
+Source Location: /Msft/Bing/Map/Map.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Map class for the Bing Maps API.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Mindtree</li>
+                        </ul>
+
+
+
+
+                
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$bingID">$bingID</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$configDetails">$configDetails</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$divName">$divName</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$persistenceHandler">$persistenceHandler</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$properties">$properties</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#var$pushpinsToAdd">$pushpinsToAdd</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct">__construct</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddLayer">addLayer</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinAddress">addPushpinAddress</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinLatLon">addPushpinLatLon</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinPushpin">addPushpinPushpin</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodattachDetails">attachDetails</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodcreateConfigurationEntity">createConfigurationEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodcreatePushpinsEntity">createPushpinsEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddeletePinGraphical">deletePinGraphical</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddisplayLoadedPushpins">displayLoadedPushpins</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddisplayMap">displayMap</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddropConfigurationEntity">dropConfigurationEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddropPushpinsEntity">dropPushpinsEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetAddress">getAddress</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetBingID">getBingID</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetBingMapLibPath">getBingMapLibPath</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetconfigDetails">getconfigDetails</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCoordinates">getCoordinates</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCurrentAddress">getCurrentAddress</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCurrentCoordinates">getCurrentCoordinates</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetDivName">getDivName</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetPinDetails">getPinDetails</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetProperties">getProperties</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetpushpinsToAdd">getpushpinsToAdd</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToDefaultLocation">goToDefaultLocation</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToLocationAddress">goToLocationAddress</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToLocationLatLon">goToLocationLatLon</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodlistPushpins">listPushpins</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodloadConfiguration">loadConfiguration</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodloadPushpins">loadPushpins</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodregisterPersistenceHandler">registerPersistenceHandler</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodremovePushpinAddress">removePushpinAddress</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodremovePushpinLatLon">removePushpinLatLon</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodremovePushpinPinId">removePushpinPinId</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodremovePushpinPushpin">removePushpinPushpin</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodresetMap">resetMap</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsaveConfiguration">saveConfiguration</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsavePushpins">savePushpins</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetBingID">setBingID</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetBingMapLibPath">setBingMapLibPath</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetconfigDetails">setconfigDetails</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetCredentials">setCredentials</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetDivName">setDivName</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetProperties">setProperties</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetpushpinsToAdd">setpushpinsToAdd</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodshowDirections">showDirections</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodunregisterPersistenceHandler">unregisterPersistenceHandler</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct1">__construct1</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct2">__construct2</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct3">__construct3</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 33]<br />
+Map class for the Bing Maps API.<br /><br /><p>Provides API's for interacting with Bing Maps</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Mindtree</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://bingmapsphp.codeplex.com">http://bingmapsphp.codeplex.com</a></td>
+  </tr>
+  <tr>
+    <td><b>todo:</b>&nbsp;&nbsp;</td><td>Add APIs for supporting other Bing Maps features</td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td>New</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$bingID"></a>
+	<p></p>
+	<h4>$bingID = <span class="value"></span></h4>
+	<p>[line 45]</p>
+  Bing Portal ID used for validating map operations<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$configDetails"></a>
+	<p></p>
+	<h4>$configDetails = <span class="value"></span></h4>
+	<p>[line 63]</p>
+  Configuration properties<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$divName"></a>
+	<p></p>
+	<h4>$divName = <span class="value">&nbsp;'adminMap'</span></h4>
+	<p>[line 39]</p>
+  ID of HTML element which will hold the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$persistenceHandler"></a>
+	<p></p>
+	<h4>$persistenceHandler = <span class="value"></span></h4>
+	<p>[line 69]</p>
+  Handle to persistence handler<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>Msft_Bing_IPersisenceHandler</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$properties"></a>
+	<p></p>
+	<h4>$properties = <span class="value"></span></h4>
+	<p>[line 51]</p>
+  Properties of the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td><a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a></td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$pushpinsToAdd"></a>
+	<p></p>
+	<h4>$pushpinsToAdd = <span class="value"></span></h4>
+	<p>[line 57]</p>
+  Array of pushpins<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array(Msft_Bing_Pushpin)</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 149]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Msft_Bing_Map __construct(
+string
+0, string
+1)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><p>Calls appropriate constructor based on the number of parameters</p><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>0</b>&nbsp;&nbsp;</td>
+        <td>divId</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>1</b>&nbsp;&nbsp;</td>
+        <td>bingId</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddLayer"></a>
+	<h3>method addLayer <span class="smalllinenumber">[line 397]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addLayer(
+string
+$domElement)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the given HTML control on the map.<br /><br /><p>This can be used for displaying a menu on mouse right click on the map</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$domElement</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddPushpinAddress"></a>
+	<h3>method addPushpinAddress <span class="smalllinenumber">[line 425]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addPushpinAddress(
+string
+$address)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add a pushpin on the map at the specified address<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$address</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddPushpinLatLon"></a>
+	<h3>method addPushpinLatLon <span class="smalllinenumber">[line 443]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addPushpinLatLon(
+float
+$latitude, float
+$longitude, string
+$defaultpin)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add a pushpin on the map at the specified location<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$latitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$longitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$defaultpin</b>&nbsp;&nbsp;</td>
+        <td>yes|no</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodaddPushpinPushpin"></a>
+	<h3>method addPushpinPushpin <span class="smalllinenumber">[line 461]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void addPushpinPushpin(
+<a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a>
+$pinObj)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add pushpins from the details available in the Pushpin object<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a>&nbsp;&nbsp;</td>
+        <td><b>$pinObj</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodattachDetails"></a>
+	<h3>method attachDetails <span class="smalllinenumber">[line 416]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void attachDetails(
+string
+$title, string
+$description)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Displays text boxes on the map to allow users to specify title and description for a pushpin<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$title</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$description</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcreateConfigurationEntity"></a>
+	<h3>method createConfigurationEntity <span class="smalllinenumber">[line 733]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void createConfigurationEntity(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Define Bing Maps Configuration entity schema and call persitenceHandler.CreateEntity() to create it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcreatePushpinsEntity"></a>
+	<h3>method createPushpinsEntity <span class="smalllinenumber">[line 664]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void createPushpinsEntity(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Define Pushpins entity schema and call persitenceHandler.CreateEntity() to create it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddeletePinGraphical"></a>
+	<h3>method deletePinGraphical <span class="smalllinenumber">[line 505]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void deletePinGraphical(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Remove an existing pushpin pointed by the mouse<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddisplayLoadedPushpins"></a>
+	<h3>method displayLoadedPushpins <span class="smalllinenumber">[line 378]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void displayLoadedPushpins(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the pushpins loaded from the database. Internally makes use of the pushpinsToAdd array.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddisplayMap"></a>
+	<h3>method displayMap <span class="smalllinenumber">[line 354]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void displayMap(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Display the map. Uses the javascript methods to achieve this<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddropConfigurationEntity"></a>
+	<h3>method dropConfigurationEntity <span class="smalllinenumber">[line 802]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void dropConfigurationEntity(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.DropEntity() method to drop Configuration entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddropPushpinsEntity"></a>
+	<h3>method dropPushpinsEntity <span class="smalllinenumber">[line 725]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void dropPushpinsEntity(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.DropEntity() method to drop Pushpins entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetAddress"></a>
+	<h3>method getAddress <span class="smalllinenumber">[line 641]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getAddress(
+string
+$latitude, string
+$longitude, string
+$textboxID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Write the address corresponding to the given location (latitude and longitude) inside the given textbox<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$latitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$longitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$textboxID</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetBingID"></a>
+	<h3>method getBingID <span class="smalllinenumber">[line 268]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getBingID(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the Bing Maps portal ID<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetBingMapLibPath"></a>
+	<h3>method getBingMapLibPath <span class="smalllinenumber">[line 308]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getBingMapLibPath(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the bing map library path<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetconfigDetails"></a>
+	<h3>method getconfigDetails <span class="smalllinenumber">[line 228]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getconfigDetails(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCoordinates"></a>
+	<h3>method getCoordinates <span class="smalllinenumber">[line 616]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getCoordinates(
+string
+$address, string
+$textboxID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Write the location (latitude and longitude) corresponding to the given address inside the given textbox<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$address</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$textboxID</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCurrentAddress"></a>
+	<h3>method getCurrentAddress <span class="smalllinenumber">[line 626]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getCurrentAddress(
+string
+$textboxID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Write the address at the current mouse location on the map inside the given textbox<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$textboxID</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetCurrentCoordinates"></a>
+	<h3>method getCurrentCoordinates <span class="smalllinenumber">[line 602]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getCurrentCoordinates(
+string
+$textboxID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Write the current mouse location (latitude and longitude) on the map inside the given textbox<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$textboxID</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetDivName"></a>
+	<h3>method getDivName <span class="smalllinenumber">[line 248]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>string getDivName(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the ID of the HTML DIV element holding the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetPinDetails"></a>
+	<h3>method getPinDetails <span class="smalllinenumber">[line 406]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getPinDetails(
+int
+$pinLen)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Makes the title and description available for the given pushpin ID.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$pinLen</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetProperties"></a>
+	<h3>method getProperties <span class="smalllinenumber">[line 288]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>MapProperties getProperties(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Gets the map properties<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetpushpinsToAdd"></a>
+	<h3>method getpushpinsToAdd <span class="smalllinenumber">[line 218]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void getpushpinsToAdd(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgoToDefaultLocation"></a>
+	<h3>method goToDefaultLocation <span class="smalllinenumber">[line 562]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void goToDefaultLocation(
+string
+$address)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the map location to the default location<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$address</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgoToLocationAddress"></a>
+	<h3>method goToLocationAddress <span class="smalllinenumber">[line 575]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void goToLocationAddress(
+string
+$address)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the map location to the specified address<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$address</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgoToLocationLatLon"></a>
+	<h3>method goToLocationLatLon <span class="smalllinenumber">[line 589]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void goToLocationLatLon(
+float
+$latitude, float
+$longitude)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set the map location to the specified location (latitude, longitude)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$latitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$longitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlistPushpins"></a>
+	<h3>method listPushpins <span class="smalllinenumber">[line 553]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array(Msft_Bing_Pushpin) listPushpins(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns a list of currently loaded pushpins in the object<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadConfiguration"></a>
+	<h3>method loadConfiguration <span class="smalllinenumber">[line 853]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void loadConfiguration(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.SelectRows to load map properties from Configuration entity into current object.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodloadPushpins"></a>
+	<h3>method loadPushpins <span class="smalllinenumber">[line 922]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void loadPushpins(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.SelectRows to load pushpins from Pushpins entity into pushpinsToAdd array.<br /><br /><p>Also loadMap variable is set to true so that Delete and Insert happens accordingly.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodregisterPersistenceHandler"></a>
+	<h3>method registerPersistenceHandler <span class="smalllinenumber">[line 317]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void registerPersistenceHandler(
+<a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html">Msft_Bing_IPersistenceHandler</a>
+$handler)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Register an IPersistanceHandler handler and initialize it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html">Msft_Bing_IPersistenceHandler</a>&nbsp;&nbsp;</td>
+        <td><b>$handler</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremovePushpinAddress"></a>
+	<h3>method removePushpinAddress <span class="smalllinenumber">[line 496]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void removePushpinAddress(
+float
+$address)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Remove an existing pushpin at the given address from the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$address</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremovePushpinLatLon"></a>
+	<h3>method removePushpinLatLon <span class="smalllinenumber">[line 486]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void removePushpinLatLon(
+float
+$latitude, float
+$longitude)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Remove an existing pushpin at the given location from the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$latitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">float&nbsp;&nbsp;</td>
+        <td><b>$longitude</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremovePushpinPinId"></a>
+	<h3>method removePushpinPinId <span class="smalllinenumber">[line 514]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void removePushpinPinId(
+string
+$id)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Remove a specific pushpin identified by the given ID from the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodremovePushpinPushpin"></a>
+	<h3>method removePushpinPushpin <span class="smalllinenumber">[line 543]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void removePushpinPushpin(
+<a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a>
+$pinObj)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Remove the specified pushpin from the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a>&nbsp;&nbsp;</td>
+        <td><b>$pinObj</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodresetMap"></a>
+	<h3>method resetMap <span class="smalllinenumber">[line 367]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void resetMap(
+string
+$id)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Resets the map to its default view.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$id</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsaveConfiguration"></a>
+	<h3>method saveConfiguration <span class="smalllinenumber">[line 810]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void saveConfiguration(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.InsertRow to save current map properties into Configuration entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsavePushpins"></a>
+	<h3>method savePushpins <span class="smalllinenumber">[line 889]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void savePushpins(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Call persitenceHandler.InsertRow to save data from pushpinsToAdd array into Pushpins entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBingID"></a>
+	<h3>method setBingID <span class="smalllinenumber">[line 258]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBingID(
+string
+$bingid)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the Bing Maps portal ID used for validating map operations<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$bingid</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetBingMapLibPath"></a>
+	<h3>method setBingMapLibPath <span class="smalllinenumber">[line 298]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setBingMapLibPath(
+string
+$bingMapLibPath)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the bing map library path<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$bingMapLibPath</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetconfigDetails"></a>
+	<h3>method setconfigDetails <span class="smalllinenumber">[line 223]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setconfigDetails(
+
+$configDetails)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$configDetails</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetCredentials"></a>
+	<h3>method setCredentials <span class="smalllinenumber">[line 341]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setCredentials(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Set current BingID as the map credentials<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetDivName"></a>
+	<h3>method setDivName <span class="smalllinenumber">[line 238]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setDivName(
+string
+$divName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the ID of the HTML DIV element which will hold the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$divName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetProperties"></a>
+	<h3>method setProperties <span class="smalllinenumber">[line 278]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setProperties(
+<a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>
+$properties)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets the properties of the map<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>&nbsp;&nbsp;</td>
+        <td><b>$properties</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetpushpinsToAdd"></a>
+	<h3>method setpushpinsToAdd <span class="smalllinenumber">[line 213]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void setpushpinsToAdd(
+
+$pushpinsToAdd)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">&nbsp;&nbsp;</td>
+        <td><b>$pushpinsToAdd</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodshowDirections"></a>
+	<h3>method showDirections <span class="smalllinenumber">[line 652]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void showDirections(
+string
+$fromAddress, string
+$toAddress)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Show direction on the map between the given from and to locations<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$fromAddress</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$toAddress</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodunregisterPersistenceHandler"></a>
+	<h3>method unregisterPersistenceHandler <span class="smalllinenumber">[line 329]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void unregisterPersistenceHandler(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Unregister the current persistence handler and uninitialize it<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__construct1"></a>
+	<h3>method __construct1 <span class="smalllinenumber">[line 169]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __construct1(
+string
+$divName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor 1<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$divName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__construct2"></a>
+	<h3>method __construct2 <span class="smalllinenumber">[line 181]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __construct2(
+string
+$divName, string|<a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>
+$bingIDorProperties)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor 2<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$divName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string|<a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>&nbsp;&nbsp;</td>
+        <td><b>$bingIDorProperties</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__construct3"></a>
+	<h3>method __construct3 <span class="smalllinenumber">[line 201]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __construct3(
+string
+$divName, <a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>
+$properties, string
+$bingID)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor 3<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$divName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a>&nbsp;&nbsp;</td>
+        <td><b>$properties</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$bingID</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Tue, 30 Nov 2010 10:43:04 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

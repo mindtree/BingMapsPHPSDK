@@ -1,0 +1,5 @@
+<?php
+
+class BingMapsKey {
+ const BINGKEY = 'YOUR KEY HERE';
+}

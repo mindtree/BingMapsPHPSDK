@@ -1,3 +1,47 @@
+<html>
+<head>
+<title>README</title>
+<link rel="stylesheet" type="text/css" href="media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Msft</td>
+  </tr>
+  <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="classtrees_Msft.html" class="menu">class tree: Msft</a> ]
+		  [ <a href="elementindex_Msft.html" class="menu">index: Msft</a> ]
+		  	    [ <a href="elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="ric">
+					<p><a href="ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="li_Msft.html">Msft</a><br />
+            <br /><br />
+                  
+      
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1 align="center">README</h1>
+<pre>
 BING MAPS SDK FOR PHP README
 =======================
 
@@ -60,16 +104,16 @@ Usage
 
     // File: test.php
     
-    <?php 
+    &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
-    ?>
+    ?&gt;
 
-    <html>
-    <body>
-      <input type="button" value="Display Map" onclick="<?php $bingObj->displayMap();?>"/>
-      <div id="myMap"/>
-    </body>
-    <html>
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Display Map&quot; onclick=&quot;&lt;?php $bingObj-&gt;displayMap();?&gt;&quot;/&gt;
+      &lt;div id=&quot;myMap&quot;/&gt;
+    &lt;/body&gt;
+    &lt;html&gt;
 
 
 
@@ -82,9 +126,9 @@ methods for interacting with the Bing Maps API.
 The API docs give complete details on the methods and parameters.
 
 As you can see from the example above, using the SDK is as simple as 
-defining a <div> element in your web application, instantiating the class, 
+defining a &lt;div&gt; element in your web application, instantiating the class, 
 calling the displayMap() method. This method in turn will interact with the 
-Bing Maps web service using Javascript and displays a live map inside the given <div> element.
+Bing Maps web service using Javascript and displays a live map inside the given &lt;div&gt; element.
 
 The second parameter passed into the constructor is your Bing Maps Key. 
 Each application with which you use the SDK will need its own key. You can obtain
@@ -99,20 +143,20 @@ everytime you connect to the Bing Maps API.
 
     // File: test.php
    
-    <?php 
+    &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
       $props = new Msft_Bing_MapProperties('600','500','7');
-      $props->setDefaultLocation('Bangalore,India');	
-      $bingObj->setProperties($props);
-    ?>
+      $props-&gt;setDefaultLocation('Bangalore,India');	
+      $bingObj-&gt;setProperties($props);
+    ?&gt;
 
-    <html>
-    <body>
-      <input type="button" value="Display Map" 
-	onclick="<?php $bingObj->displayMap(); $bingObj->addPushpinAddress('Bangalore,India');?>"/>
-      <div id="myMap"/>
-    </body>
-    <html>
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Display Map&quot; 
+	onclick=&quot;&lt;?php $bingObj-&gt;displayMap(); $bingObj-&gt;addPushpinAddress('Bangalore,India');?&gt;&quot;/&gt;
+      &lt;div id=&quot;myMap&quot;/&gt;
+    &lt;/body&gt;
+    &lt;html&gt;
 
 Code Example 2 demonstrates the use of addPushpinAddress() method to display a pushpin on the map.
 
@@ -122,25 +166,25 @@ Code Example 2 demonstrates the use of addPushpinAddress() method to display a p
 
     // File: test.php
 
-    <?php 
+    &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
       $props = new Msft_Bing_MapProperties('600','500','7');
-      $props->setDefaultLocation('Bangalore,India');	
-      $bingObj->setProperties($props);
+      $props-&gt;setDefaultLocation('Bangalore,India');	
+      $bingObj-&gt;setProperties($props);
 
       $handler = new Msft_Bing_MySQLPersistenceHandler($dbhost, $dbname, $dbuser, $dbpassword);
-      $bingObj->registerPersistenceHandler($handler);
+      $bingObj-&gt;registerPersistenceHandler($handler);
 
       $pin = new Msft_Bing_Pushpin(1, 'FirstPin', 'My Home', 'Bangalore,India');
-    ?>
+    ?&gt;
 
-    <html>
-    <body>
-      <input type="button" value="Display Map" 
-	onclick="<?php $bingObj->displayMap(); $bingObj->addPushpinPushpin($pin); $bingObj->savePushpins();?>"/>
-      <div id="myMap" style="position:relative"/>
-    </body>
-    <html>
+    &lt;html&gt;
+    &lt;body&gt;
+      &lt;input type=&quot;button&quot; value=&quot;Display Map&quot; 
+	onclick=&quot;&lt;?php $bingObj-&gt;displayMap(); $bingObj-&gt;addPushpinPushpin($pin); $bingObj-&gt;savePushpins();?&gt;&quot;/&gt;
+      &lt;div id=&quot;myMap&quot; style=&quot;position:relative&quot;/&gt;
+    &lt;/body&gt;
+    &lt;html&gt;
 
 Code Example 3 demonstrates the use of savePushpins() method to save pushpin details in a database.
 
@@ -158,3 +202,16 @@ This library is free and open software. It is released under the New BSD License
 license. A copy of the license can be found in the LICENSE file, included in the
 distribution. A copy of the license can be downloaded at
 http://bingphp.codeplex.com/license
+
+</pre>
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Tue, 30 Nov 2010 10:43:03 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

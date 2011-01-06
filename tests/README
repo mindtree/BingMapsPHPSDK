@@ -1,0 +1,22 @@
+README FOR BING MAPS SDK for PHP UNIT TESTS
+======================================
+
+The library's functionality tests require a valid Bing Maps Key in order to 
+run. You can obtain a Bing Maps Key from Microsoft by going to the 
+web page https://www.bingmapsportal.com/
+
+Installing the AppID
+====================
+
+In order to make the test suite recognize the App ID, you need to follow these 
+steps:
+
+1. Copy bingkey.php.template to bingkey.php
+2. Replace the words "YOUR KEY HERE" with the Key provided by Bing
+
+
+Running the Tests
+=================
+
+The test suite is designed to be run using PHPUnit (http://phpunit.de/) 
+version 3.4.9 or higher.

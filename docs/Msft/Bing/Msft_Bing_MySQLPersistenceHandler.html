@@ -1,0 +1,765 @@
+<html>
+<head>
+<title>Docs For Class Msft_Bing_MySQLPersistenceHandler</title>
+<link rel="stylesheet" type="text/css" href="../../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Msft</td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../../classtrees_Msft.html" class="menu">class tree: Msft</a> ]
+		  [ <a href="../../elementindex_Msft.html" class="menu">index: Msft</a> ]
+		  	    [ <a href="../../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="ric">
+					<p><a href="../../ric_README.html">README</a></p>
+			</div>
+	<div id="todolist">
+			<p><a href="../../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../../li_Msft.html">Msft</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../../Msft/_Msft---Bing---Exception.php.html">		Exception.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---IPersistenceHandler.php.html">		IPersistenceHandler.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---Map---Map.php.html">		Map.php
+		</a><br>
+			<a href="../../Msft/_Msft---Bing---MySQLPersistenceHandler.php.html">		MySQLPersistenceHandler.php
+		</a><br>
+	  </div><br />
+	subpackage <b>Bing</b><br>  <div class="package">
+			<a href="../../Msft/Bing/_Msft---Bing---Map---GetResults.php.html">		GetResults.php
+		</a><br>
+	  </div><br />
+      
+            <b>Interfaces:</b><br />
+        <div class="package">
+	Bing<br />	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html">Msft_Bing_IPersistenceHandler</a><br />
+	  </div>
+      
+            <b>Classes:</b><br />
+        <div class="package">
+	Bing<br />	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Column.html">Msft_Bing_Column</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Entity.html">Msft_Bing_Entity</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Map.html">Msft_Bing_Map</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MapException.html">Msft_Bing_MapException</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MapProperties.html">Msft_Bing_MapProperties</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html">Msft_Bing_MySQLPersistenceHandler</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Pushpin.html">Msft_Bing_Pushpin</a><br />
+	    &nbsp;&nbsp;		<a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Msft_Bing_MySQLPersistenceHandler</h1>
+Source Location: /Msft/Bing/MySQLPersistenceHandler.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Default implementation of Msft_Bing_IPersistenceHandler interface.</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>Mindtree</li>
+                  </ul>
+
+
+
+
+            
+
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html">Msft_Bing_IPersistenceHandler</a></li>            </ul>
+        </p>
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$connection">$connection</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$database">$database</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$host">$host</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$password">$password</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$user">$user</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#method__construct">__construct</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#method__destruct">__destruct</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodcreateEntity">createEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoddeleteRows">deleteRows</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoddoesEntityExist">doesEntityExist</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoddropEntity">dropEntity</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodinitialize">initialize</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodinsertRow">insertRow</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodselectRows">selectRows</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoduninitialize">uninitialize</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodupdateRows">updateRows</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 43]<br />
+Default implementation of Msft_Bing_IPersistenceHandler interface.<br /><br /><p>This class uses MySQL for storing/retrieving data.  The Bing Maps SDK uses this class as the default persistence handler.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Mindtree</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://bingmapsphp.codeplex.com">http://bingmapsphp.codeplex.com</a></td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td>New</td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$connection"></a>
+	<p></p>
+	<h4>$connection = <span class="value"></span></h4>
+	<p>[line 73]</p>
+  MySQL connection string<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>mixed</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$database"></a>
+	<p></p>
+	<h4>$database = <span class="value"></span></h4>
+	<p>[line 55]</p>
+  MySQL database name<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$host"></a>
+	<p></p>
+	<h4>$host = <span class="value"></span></h4>
+	<p>[line 49]</p>
+  MySQL server host<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$password"></a>
+	<p></p>
+	<h4>$password = <span class="value"></span></h4>
+	<p>[line 67]</p>
+  MySQL password<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$user"></a>
+	<p></p>
+	<h4>$user = <span class="value"></span></h4>
+	<p>[line 61]</p>
+  MySQL user name<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>protected</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 83]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Msft_Bing_MySQLPersistenceHandler __construct(
+string
+$host, string
+$database, string
+$user, string
+$password)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Constructor<br /><br /><br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$host</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$database</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$user</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$password</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__destruct"></a>
+	<h3>destructor __destruct <span class="smalllinenumber">[line 101]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __destruct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Destructor<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcreateEntity"></a>
+	<h3>method createEntity <span class="smalllinenumber">[line 151]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean createEntity(
+<a href="../../Msft/Bing/Msft_Bing_Entity.html">Msft_Bing_Entity</a>
+$ent)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Create the given entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodcreateEntity">Msft_Bing_IPersistenceHandler::createEntity()</a></dt>
+						<dd>Create the given entity</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_Entity.html">Msft_Bing_Entity</a>&nbsp;&nbsp;</td>
+        <td><b>$ent</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddeleteRows"></a>
+	<h3>method deleteRows <span class="smalllinenumber">[line 391]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean deleteRows(
+string
+$entityName, string
+$whereFilter)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Delete entity rows which match the given filter  If $whereFilter is null or empty, all rows in the entity will be deleted<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddeleteRows">Msft_Bing_IPersistenceHandler::deleteRows()</a></dt>
+						<dd>Delete entity rows which match the given filter  If $whereFilter is null or empty, all rows in the entity will be deleted</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$whereFilter</b>&nbsp;&nbsp;</td>
+        <td>Example: &quot;firstname='Tom' OR (age&gt;25 AND age&lt;=50)&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddoesEntityExist"></a>
+	<h3>method doesEntityExist <span class="smalllinenumber">[line 256]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean doesEntityExist(
+string
+$entityName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Checks whether the given entity exists or not<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddoesEntityExist">Msft_Bing_IPersistenceHandler::doesEntityExist()</a></dt>
+						<dd>Checks whether the given entity exists or not</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddropEntity"></a>
+	<h3>method dropEntity <span class="smalllinenumber">[line 226]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean dropEntity(
+string
+$entityName)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Drop the given entity<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddropEntity">Msft_Bing_IPersistenceHandler::dropEntity()</a></dt>
+						<dd>Drop the given entity</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinitialize"></a>
+	<h3>method initialize <span class="smalllinenumber">[line 110]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean initialize(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Initialize any connections to database, files etc<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodinitialize">Msft_Bing_IPersistenceHandler::initialize()</a></dt>
+						<dd>Initialize any connections to database, files etc</dd>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodinsertRow"></a>
+	<h3>method insertRow <span class="smalllinenumber">[line 298]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean insertRow(
+string
+$entityName, <a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a>
+$row)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Insert an entity row<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodinsertRow">Msft_Bing_IPersistenceHandler::insertRow()</a></dt>
+						<dd>Insert an entity row</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a>&nbsp;&nbsp;</td>
+        <td><b>$row</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodselectRows"></a>
+	<h3>method selectRows <span class="smalllinenumber">[line 430]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>Msft_Bing_Row[] selectRows(
+string
+$entityName, string
+$whereFilter)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Select rows in the given entity which match the given filter  If $whereFilter is null or empty, all rows in the entity will returned<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodselectRows">Msft_Bing_IPersistenceHandler::selectRows()</a></dt>
+						<dd>Select rows in the given entity which match the given filter  If $whereFilter is null or empty, all rows in the entity will be returned</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$whereFilter</b>&nbsp;&nbsp;</td>
+        <td>Example: &quot;firstname='Tom' OR (age&gt;25 AND age&lt;=50)&quot;</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoduninitialize"></a>
+	<h3>method uninitialize <span class="smalllinenumber">[line 134]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean uninitialize(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Close all open connections<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoduninitialize">Msft_Bing_IPersistenceHandler::uninitialize()</a></dt>
+						<dd>Close all open connections</dd>
+					</dl>
+		
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodupdateRows"></a>
+	<h3>method updateRows <span class="smalllinenumber">[line 343]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean updateRows(
+string
+$entityName, <a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a>
+$rowValue, string
+$whereFilter)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Update entity rows which match the given filter.<br /><br /><p>The column values to be updated are passed as $rowValue  If $whereFilter is null or empty, all rows in the entity will be updated</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+			<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodupdateRows">Msft_Bing_IPersistenceHandler::updateRows()</a></dt>
+						<dd>Update entity rows which match the given filter.</dd>
+					</dl>
+		
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$entityName</b>&nbsp;&nbsp;</td>
+        <td></td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$whereFilter</b>&nbsp;&nbsp;</td>
+        <td>Example: &quot;firstname='Tom' OR (age&gt;25 AND age&lt;=50)&quot;</td>
+      </tr>
+          <tr>
+        <td class="type"><a href="../../Msft/Bing/Msft_Bing_Row.html">Msft_Bing_Row</a>&nbsp;&nbsp;</td>
+        <td><b>$rowValue</b>&nbsp;&nbsp;</td>
+        <td>New column values</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Tue, 30 Nov 2010 10:43:04 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
