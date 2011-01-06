@@ -154,7 +154,7 @@ The SDK includes a default persistence handler which uses MySQL as the backend d
 
 License
 =======
-This library is free and open software. It is released under the New BSD License (BSD)
-license. A copy of the license can be found in the LICENSE file, included in the
-distribution. A copy of the license can be downloaded at
-http://bingphp.codeplex.com/license
+This library is released free of charge under the terms of the GNU General Public License v2.
+A copy of the license is available in the LICENSE file, included in the distribution.
+
+
