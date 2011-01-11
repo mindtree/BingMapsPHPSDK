@@ -10,10 +10,10 @@
  * @category  Msft
  * @package   Msft
  * @author    Mindtree 
- * @copyright 2010 Microsoft
- * @license   New BSD License (BSD) http://bingmapsphp.codeplex.com/license
+ * @copyright 2011 Mindtree Limited
+ * @license    GPL v2 License https://github.com/mindtree/BingMapsPHPSDK
+ * @link       https://github.com/mindtree/BingMapsPHPSDK
  * @version   SVN: $Id: Map.php 50 2010-11-10 10:00:00Z cal $
- * @link      http://bingmapsphp.codeplex.com
  *
  */
 
@@ -27,8 +27,8 @@
  * @package    Msft
  * @subpackage Bing
  * @author     Mindtree 
- * @license    New BSD License (BSD) http://bingmapsphp.codeplex.com/license
- * @link       http://bingmapsphp.codeplex.com
+ * @license    GPL v2 License https://github.com/mindtree/BingMapsPHPSDK
+ * @link       https://github.com/mindtree/BingMapsPHPSDK
  */
 interface Msft_Bing_IPersistenceHandler
 {
