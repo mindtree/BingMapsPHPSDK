@@ -51,20 +51,7 @@
     The license document is available <a href="license">here</a>.</span><br />
     <br />
     <span class="style3">Architecture</span><br />
-
-
-    <html>
-    <html>
-
-
-
-    <html>
-    <html>
-
-    <html>
-    <html>
-
-    <img alt="" src="images/architecture.jpg" style="width: 513px" />
+    <img alt="Architecture Diagram" src="images/architecture.jpg" style="width: 513px" />
     <p>
         &nbsp;</p>
     <span class="style3">
@@ -133,7 +120,7 @@ Usage
       &lt;input type=&quot;button&quot; value=&quot;Display Map&quot; onclick=&quot;&lt;?php $bingObj-&gt;displayMap();?&gt;&quot;/&gt;
       &lt;div id=&quot;myMap&quot;/&gt;
     &lt;/body&gt;
-    &lt;html&gt;
+    &lt;/html&gt;
 
 
     The Bing Maps SDK for PHP is designed to give PHP developers an object-oriented
@@ -145,15 +132,15 @@ Usage
     The API docs give complete details on the methods and parameters.
 
     As you can see from the example above, using the SDK is as simple as 
-    defining a &lt;div&gt; element in your web application, instantiating the class, 
-    calling the displayMap() method. This method in turn will interact with the 
+    defining a &lt;div&gt; element in your web application, instantiating the class
+    and calling the displayMap() method. This method in turn will interact with the 
     Bing Maps web service using Javascript and displays a live map inside the given &lt;div&gt; element.
 
     The second parameter passed into the constructor is your Bing Maps Key. 
     Each application with which you use the SDK will need its own key. You can obtain
     a Bing Maps Key from Microsoft by going to the web page https://www.bingmapsportal.com/
-    Once you have it, store it in your confirugation file somewhere and use it
-    everytime you connect to the Bing Maps API.
+    Once you have it, store it in your configuration file somewhere and use it
+    every time you connect to the Bing Maps API.
 
 
     Code Example 2
@@ -174,7 +161,7 @@ Usage
 	onclick=&quot;&lt;?php $bingObj-&gt;displayMap(); $bingObj-&gt;addPushpinAddress('Bangalore,India');?&gt;&quot;/&gt;
       &lt;div id=&quot;myMap&quot;/&gt;
     &lt;/body&gt;
-    &lt;html&gt;
+    &lt;/html&gt;
 
     Code Example 2 demonstrates the use of addPushpinAddress() method to display a pushpin on the map.
 
@@ -202,7 +189,7 @@ Usage
 	onclick=&quot;&lt;?php $bingObj-&gt;displayMap(); $bingObj-&gt;addPushpinPushpin($pin); $bingObj-&gt;savePushpins();?&gt;&quot;/&gt;
       &lt;div id=&quot;myMap&quot; style=&quot;position:relative&quot;/&gt;
     &lt;/body&gt;
-    &lt;html&gt;
+    &lt;/html&gt;
 
     Code Example 3 demonstrates the use of savePushpins() method to save pushpin details in a database.
 
