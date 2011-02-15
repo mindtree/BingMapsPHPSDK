@@ -70,30 +70,12 @@ The following directories are included in the library:
 Class Inclusion
 ===============
 
-In order to use the SDK in your project, you need to copy the lib folder under your web project
-and include the following files in your project files:
+In order to use the SDK in your project, you need to include the following
+files:
 
 	- lib/Msft/Bing/Exception.php
 	- lib/Msft/Bing/Map/Map.php
 	- lib/Msft/Bing/MySQLPersistenceHandler.php
-
-For example, if you web project is called 'bingsdktest', your folder structure should be
-
-	bingsdktest
-		|- test.php
-		|- lib
-		    |- Msft
-		    	|- Bing
-			    |- Exception.php
-			    |- IPersistenceHandler.php
-			    |- MySQLPersistenceHandler.php
-			    |- js
-				|- addJsFiles.js
-				|- jquery-1.2.6.js
-				|- maps.js
-			    |- Map
-				|- GetResults.php
-				|- Map.php
 
 
 Usage
@@ -101,8 +83,6 @@ Usage
 
     Code Example 1
     ==============
-
-    // File: test.php
     
     &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
@@ -140,8 +120,6 @@ everytime you connect to the Bing Maps API.
 
     Code Example 2
     ==============
-
-    // File: test.php
    
     &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
@@ -164,8 +142,6 @@ Code Example 2 demonstrates the use of addPushpinAddress() method to display a p
     Code Example 3
     ==============
 
-    // File: test.php
-
     &lt;?php 
       $bingObj = new Msft_Bing_Map('myMap', $myBingMapID);
       $props = new Msft_Bing_MapProperties('600','500','7');
@@ -174,15 +150,13 @@ Code Example 2 demonstrates the use of addPushpinAddress() method to display a p
 
       $handler = new Msft_Bing_MySQLPersistenceHandler($dbhost, $dbname, $dbuser, $dbpassword);
       $bingObj-&gt;registerPersistenceHandler($handler);
-
-      $pin = new Msft_Bing_Pushpin(1, 'FirstPin', 'My Home', 'Bangalore,India');
     ?&gt;
 
     &lt;html&gt;
     &lt;body&gt;
       &lt;input type=&quot;button&quot; value=&quot;Display Map&quot; 
-	onclick=&quot;&lt;?php $bingObj-&gt;displayMap(); $bingObj-&gt;addPushpinPushpin($pin); $bingObj-&gt;savePushpins();?&gt;&quot;/&gt;
-      &lt;div id=&quot;myMap&quot; style=&quot;position:relative&quot;/&gt;
+	onclick=&quot;&lt;?php $bingObj-&gt;displayMap();$bingObj-&gt;addPushpinAddress('Bangalore,India');$bingObj-&gt;savePushpins();?&gt;&quot;/&gt;
+      &lt;div id=&quot;myMap&quot;/&gt;
     &lt;/body&gt;
     &lt;html&gt;
 
@@ -201,12 +175,12 @@ License
 This library is free and open software. It is released under the New BSD License (BSD)
 license. A copy of the license can be found in the LICENSE file, included in the
 distribution. A copy of the license can be downloaded at
-http://bingphp.codeplex.com/license
+https://github.com/mindtree/BingMapsPHPSDK
 
 </pre>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Tue, 30 Nov 2010 10:43:03 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Wed, 17 Nov 2010 16:45:29 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>

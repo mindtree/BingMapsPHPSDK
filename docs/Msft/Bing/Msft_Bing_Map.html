@@ -110,29 +110,23 @@ Source Location: /Msft/Bing/Map/Map.php<br /><br />
 <h3><a href="#class_methods">Methods</a></h3>
 <ul>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct">__construct</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddLayer">addLayer</a></li>
+    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddControl">addControl</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinAddress">addPushpinAddress</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinLatLon">addPushpinLatLon</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodaddPushpinPushpin">addPushpinPushpin</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodattachDetails">attachDetails</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodcreateConfigurationEntity">createConfigurationEntity</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodcreatePushpinsEntity">createPushpinsEntity</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddeletePinGraphical">deletePinGraphical</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddisplayLoadedPushpins">displayLoadedPushpins</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddisplayMap">displayMap</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddropConfigurationEntity">dropConfigurationEntity</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methoddropPushpinsEntity">dropPushpinsEntity</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetAddress">getAddress</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetBingID">getBingID</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetBingMapLibPath">getBingMapLibPath</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetconfigDetails">getconfigDetails</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCoordinates">getCoordinates</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCurrentAddress">getCurrentAddress</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetCurrentCoordinates">getCurrentCoordinates</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetDivName">getDivName</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetPinDetails">getPinDetails</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetProperties">getProperties</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgetpushpinsToAdd">getpushpinsToAdd</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToDefaultLocation">goToDefaultLocation</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToLocationAddress">goToLocationAddress</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodgoToLocationLatLon">goToLocationLatLon</a></li>
@@ -148,12 +142,9 @@ Source Location: /Msft/Bing/Map/Map.php<br /><br />
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsaveConfiguration">saveConfiguration</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsavePushpins">savePushpins</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetBingID">setBingID</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetBingMapLibPath">setBingMapLibPath</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetconfigDetails">setconfigDetails</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetCredentials">setCredentials</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetDivName">setDivName</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetProperties">setProperties</a></li>
-    <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodsetpushpinsToAdd">setpushpinsToAdd</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodshowDirections">showDirections</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#methodunregisterPersistenceHandler">unregisterPersistenceHandler</a></li>
     <li><a href="../../Msft/Bing/Msft_Bing_Map.html#method__construct1">__construct1</a></li>
@@ -187,13 +178,13 @@ Map class for the Bing Maps API.<br /><br /><p>Provides API's for interacting wi
     <td><b>author:</b>&nbsp;&nbsp;</td><td>Mindtree</td>
   </tr>
   <tr>
-    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://bingmapsphp.codeplex.com">http://bingmapsphp.codeplex.com</a></td>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="https://github.com/mindtree/BingMapsPHPSDK">https://github.com/mindtree/BingMapsPHPSDK</a></td>
   </tr>
   <tr>
     <td><b>todo:</b>&nbsp;&nbsp;</td><td>Add APIs for supporting other Bing Maps features</td>
   </tr>
   <tr>
-    <td><b>license:</b>&nbsp;&nbsp;</td><td>New</td>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td>GPL v2 License https://github.com/mindtree/BingMapsPHPSDK</td>
   </tr>
 </table>
 </div>
@@ -357,7 +348,7 @@ Map class for the Bing Maps API.<br /><br /><p>Provides API's for interacting wi
 
   <hr />
 	<a name="method__construct"></a>
-	<h3>constructor __construct <span class="smalllinenumber">[line 149]</span></h3>
+	<h3>constructor __construct <span class="smalllinenumber">[line 118]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -389,12 +380,12 @@ string
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodaddLayer"></a>
-	<h3>method addLayer <span class="smalllinenumber">[line 397]</span></h3>
+	<a name="methodaddControl"></a>
+	<h3>method addControl <span class="smalllinenumber">[line 381]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void addLayer(
+		<code>void addControl(
 string
 $domElement)</code>
     </td></tr></table>
@@ -426,7 +417,7 @@ $domElement)</code>
   </div>
   <hr />
 	<a name="methodaddPushpinAddress"></a>
-	<h3>method addPushpinAddress <span class="smalllinenumber">[line 425]</span></h3>
+	<h3>method addPushpinAddress <span class="smalllinenumber">[line 324]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -462,15 +453,14 @@ $address)</code>
   </div>
   <hr />
 	<a name="methodaddPushpinLatLon"></a>
-	<h3>method addPushpinLatLon <span class="smalllinenumber">[line 443]</span></h3>
+	<h3>method addPushpinLatLon <span class="smalllinenumber">[line 341]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
 		<code>void addPushpinLatLon(
 float
 $latitude, float
-$longitude, string
-$defaultpin)</code>
+$longitude)</code>
     </td></tr></table>
     </td></tr></table><br />
 	
@@ -499,18 +489,13 @@ $defaultpin)</code>
         <td><b>$longitude</b>&nbsp;&nbsp;</td>
         <td></td>
       </tr>
-          <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$defaultpin</b>&nbsp;&nbsp;</td>
-        <td>yes|no</td>
-      </tr>
         </table>
     </div><br />
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
 	<a name="methodaddPushpinPushpin"></a>
-	<h3>method addPushpinPushpin <span class="smalllinenumber">[line 461]</span></h3>
+	<h3>method addPushpinPushpin <span class="smalllinenumber">[line 359]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -545,50 +530,8 @@ $pinObj)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodattachDetails"></a>
-	<h3>method attachDetails <span class="smalllinenumber">[line 416]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void attachDetails(
-string
-$title, string
-$description)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		Displays text boxes on the map to allow users to specify title and description for a pushpin<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$title</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-          <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$description</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodcreateConfigurationEntity"></a>
-	<h3>method createConfigurationEntity <span class="smalllinenumber">[line 733]</span></h3>
+	<h3>method createConfigurationEntity <span class="smalllinenumber">[line 638]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -613,7 +556,7 @@ $description)</code>
   </div>
   <hr />
 	<a name="methodcreatePushpinsEntity"></a>
-	<h3>method createPushpinsEntity <span class="smalllinenumber">[line 664]</span></h3>
+	<h3>method createPushpinsEntity <span class="smalllinenumber">[line 569]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -637,33 +580,8 @@ $description)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methoddeletePinGraphical"></a>
-	<h3>method deletePinGraphical <span class="smalllinenumber">[line 505]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void deletePinGraphical(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		Remove an existing pushpin pointed by the mouse<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methoddisplayLoadedPushpins"></a>
-	<h3>method displayLoadedPushpins <span class="smalllinenumber">[line 378]</span></h3>
+	<h3>method displayLoadedPushpins <span class="smalllinenumber">[line 306]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -688,7 +606,7 @@ $description)</code>
   </div>
   <hr />
 	<a name="methoddisplayMap"></a>
-	<h3>method displayMap <span class="smalllinenumber">[line 354]</span></h3>
+	<h3>method displayMap <span class="smalllinenumber">[line 281]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -713,7 +631,7 @@ $description)</code>
   </div>
   <hr />
 	<a name="methoddropConfigurationEntity"></a>
-	<h3>method dropConfigurationEntity <span class="smalllinenumber">[line 802]</span></h3>
+	<h3>method dropConfigurationEntity <span class="smalllinenumber">[line 707]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -738,7 +656,7 @@ $description)</code>
   </div>
   <hr />
 	<a name="methoddropPushpinsEntity"></a>
-	<h3>method dropPushpinsEntity <span class="smalllinenumber">[line 725]</span></h3>
+	<h3>method dropPushpinsEntity <span class="smalllinenumber">[line 630]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -763,7 +681,7 @@ $description)</code>
   </div>
   <hr />
 	<a name="methodgetAddress"></a>
-	<h3>method getAddress <span class="smalllinenumber">[line 641]</span></h3>
+	<h3>method getAddress <span class="smalllinenumber">[line 546]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -811,7 +729,7 @@ $textboxID)</code>
   </div>
   <hr />
 	<a name="methodgetBingID"></a>
-	<h3>method getBingID <span class="smalllinenumber">[line 268]</span></h3>
+	<h3>method getBingID <span class="smalllinenumber">[line 215]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -835,58 +753,8 @@ $textboxID)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodgetBingMapLibPath"></a>
-	<h3>method getBingMapLibPath <span class="smalllinenumber">[line 308]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>string getBingMapLibPath(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		Gets the bing map library path<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
-	<a name="methodgetconfigDetails"></a>
-	<h3>method getconfigDetails <span class="smalllinenumber">[line 228]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void getconfigDetails(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		<br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodgetCoordinates"></a>
-	<h3>method getCoordinates <span class="smalllinenumber">[line 616]</span></h3>
+	<h3>method getCoordinates <span class="smalllinenumber">[line 521]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -928,7 +796,7 @@ $textboxID)</code>
   </div>
   <hr />
 	<a name="methodgetCurrentAddress"></a>
-	<h3>method getCurrentAddress <span class="smalllinenumber">[line 626]</span></h3>
+	<h3>method getCurrentAddress <span class="smalllinenumber">[line 531]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -964,7 +832,7 @@ $textboxID)</code>
   </div>
   <hr />
 	<a name="methodgetCurrentCoordinates"></a>
-	<h3>method getCurrentCoordinates <span class="smalllinenumber">[line 602]</span></h3>
+	<h3>method getCurrentCoordinates <span class="smalllinenumber">[line 507]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1000,7 +868,7 @@ $textboxID)</code>
   </div>
   <hr />
 	<a name="methodgetDivName"></a>
-	<h3>method getDivName <span class="smalllinenumber">[line 248]</span></h3>
+	<h3>method getDivName <span class="smalllinenumber">[line 195]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1024,44 +892,8 @@ $textboxID)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodgetPinDetails"></a>
-	<h3>method getPinDetails <span class="smalllinenumber">[line 406]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void getPinDetails(
-int
-$pinLen)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		Makes the title and description available for the given pushpin ID.<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">int&nbsp;&nbsp;</td>
-        <td><b>$pinLen</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodgetProperties"></a>
-	<h3>method getProperties <span class="smalllinenumber">[line 288]</span></h3>
+	<h3>method getProperties <span class="smalllinenumber">[line 235]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1085,33 +917,8 @@ $pinLen)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodgetpushpinsToAdd"></a>
-	<h3>method getpushpinsToAdd <span class="smalllinenumber">[line 218]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void getpushpinsToAdd(
-)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		<br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodgoToDefaultLocation"></a>
-	<h3>method goToDefaultLocation <span class="smalllinenumber">[line 562]</span></h3>
+	<h3>method goToDefaultLocation <span class="smalllinenumber">[line 467]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1147,7 +954,7 @@ $address)</code>
   </div>
   <hr />
 	<a name="methodgoToLocationAddress"></a>
-	<h3>method goToLocationAddress <span class="smalllinenumber">[line 575]</span></h3>
+	<h3>method goToLocationAddress <span class="smalllinenumber">[line 480]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1183,7 +990,7 @@ $address)</code>
   </div>
   <hr />
 	<a name="methodgoToLocationLatLon"></a>
-	<h3>method goToLocationLatLon <span class="smalllinenumber">[line 589]</span></h3>
+	<h3>method goToLocationLatLon <span class="smalllinenumber">[line 494]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1225,7 +1032,7 @@ $longitude)</code>
   </div>
   <hr />
 	<a name="methodlistPushpins"></a>
-	<h3>method listPushpins <span class="smalllinenumber">[line 553]</span></h3>
+	<h3>method listPushpins <span class="smalllinenumber">[line 450]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1250,7 +1057,7 @@ $longitude)</code>
   </div>
   <hr />
 	<a name="methodloadConfiguration"></a>
-	<h3>method loadConfiguration <span class="smalllinenumber">[line 853]</span></h3>
+	<h3>method loadConfiguration <span class="smalllinenumber">[line 758]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1275,7 +1082,7 @@ $longitude)</code>
   </div>
   <hr />
 	<a name="methodloadPushpins"></a>
-	<h3>method loadPushpins <span class="smalllinenumber">[line 922]</span></h3>
+	<h3>method loadPushpins <span class="smalllinenumber">[line 825]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1300,7 +1107,7 @@ $longitude)</code>
   </div>
   <hr />
 	<a name="methodregisterPersistenceHandler"></a>
-	<h3>method registerPersistenceHandler <span class="smalllinenumber">[line 317]</span></h3>
+	<h3>method registerPersistenceHandler <span class="smalllinenumber">[line 244]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1336,7 +1143,7 @@ $handler)</code>
   </div>
   <hr />
 	<a name="methodremovePushpinAddress"></a>
-	<h3>method removePushpinAddress <span class="smalllinenumber">[line 496]</span></h3>
+	<h3>method removePushpinAddress <span class="smalllinenumber">[line 401]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1372,7 +1179,7 @@ $address)</code>
   </div>
   <hr />
 	<a name="methodremovePushpinLatLon"></a>
-	<h3>method removePushpinLatLon <span class="smalllinenumber">[line 486]</span></h3>
+	<h3>method removePushpinLatLon <span class="smalllinenumber">[line 391]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1414,7 +1221,7 @@ $longitude)</code>
   </div>
   <hr />
 	<a name="methodremovePushpinPinId"></a>
-	<h3>method removePushpinPinId <span class="smalllinenumber">[line 514]</span></h3>
+	<h3>method removePushpinPinId <span class="smalllinenumber">[line 411]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1450,7 +1257,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodremovePushpinPushpin"></a>
-	<h3>method removePushpinPushpin <span class="smalllinenumber">[line 543]</span></h3>
+	<h3>method removePushpinPushpin <span class="smalllinenumber">[line 440]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1486,7 +1293,7 @@ $pinObj)</code>
   </div>
   <hr />
 	<a name="methodresetMap"></a>
-	<h3>method resetMap <span class="smalllinenumber">[line 367]</span></h3>
+	<h3>method resetMap <span class="smalllinenumber">[line 294]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1522,7 +1329,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodsaveConfiguration"></a>
-	<h3>method saveConfiguration <span class="smalllinenumber">[line 810]</span></h3>
+	<h3>method saveConfiguration <span class="smalllinenumber">[line 715]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1547,7 +1354,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodsavePushpins"></a>
-	<h3>method savePushpins <span class="smalllinenumber">[line 889]</span></h3>
+	<h3>method savePushpins <span class="smalllinenumber">[line 792]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1572,7 +1379,7 @@ $id)</code>
   </div>
   <hr />
 	<a name="methodsetBingID"></a>
-	<h3>method setBingID <span class="smalllinenumber">[line 258]</span></h3>
+	<h3>method setBingID <span class="smalllinenumber">[line 205]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1607,80 +1414,8 @@ $bingid)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodsetBingMapLibPath"></a>
-	<h3>method setBingMapLibPath <span class="smalllinenumber">[line 298]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void setBingMapLibPath(
-string
-$bingMapLibPath)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		Sets the bing map library path<br /><br /><br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">string&nbsp;&nbsp;</td>
-        <td><b>$bingMapLibPath</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
-	<a name="methodsetconfigDetails"></a>
-	<h3>method setconfigDetails <span class="smalllinenumber">[line 223]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void setconfigDetails(
-
-$configDetails)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		<br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$configDetails</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodsetCredentials"></a>
-	<h3>method setCredentials <span class="smalllinenumber">[line 341]</span></h3>
+	<h3>method setCredentials <span class="smalllinenumber">[line 268]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1705,7 +1440,7 @@ $configDetails)</code>
   </div>
   <hr />
 	<a name="methodsetDivName"></a>
-	<h3>method setDivName <span class="smalllinenumber">[line 238]</span></h3>
+	<h3>method setDivName <span class="smalllinenumber">[line 185]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1741,7 +1476,7 @@ $divName)</code>
   </div>
   <hr />
 	<a name="methodsetProperties"></a>
-	<h3>method setProperties <span class="smalllinenumber">[line 278]</span></h3>
+	<h3>method setProperties <span class="smalllinenumber">[line 225]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1776,44 +1511,8 @@ $properties)</code>
         <div class="top">[ <a href="#top">Top</a> ]</div>
   </div>
   <hr />
-	<a name="methodsetpushpinsToAdd"></a>
-	<h3>method setpushpinsToAdd <span class="smalllinenumber">[line 213]</span></h3>
-	<div class="function">
-    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
-    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
-		<code>void setpushpinsToAdd(
-
-$pushpinsToAdd)</code>
-    </td></tr></table>
-    </td></tr></table><br />
-	
-		<br /><br />
-<h4>Tags:</h4>
-<div class="tags">
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
-  </tr>
-</table>
-</div>
-<br /><br />
-
-	
-        <h4>Parameters:</h4>
-    <div class="tags">
-    <table border="0" cellspacing="0" cellpadding="0">
-          <tr>
-        <td class="type">&nbsp;&nbsp;</td>
-        <td><b>$pushpinsToAdd</b>&nbsp;&nbsp;</td>
-        <td></td>
-      </tr>
-        </table>
-    </div><br />
-        <div class="top">[ <a href="#top">Top</a> ]</div>
-  </div>
-  <hr />
 	<a name="methodshowDirections"></a>
-	<h3>method showDirections <span class="smalllinenumber">[line 652]</span></h3>
+	<h3>method showDirections <span class="smalllinenumber">[line 557]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1855,7 +1554,7 @@ $toAddress)</code>
   </div>
   <hr />
 	<a name="methodunregisterPersistenceHandler"></a>
-	<h3>method unregisterPersistenceHandler <span class="smalllinenumber">[line 329]</span></h3>
+	<h3>method unregisterPersistenceHandler <span class="smalllinenumber">[line 256]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1880,7 +1579,7 @@ $toAddress)</code>
   </div>
   <hr />
 	<a name="method__construct1"></a>
-	<h3>method __construct1 <span class="smalllinenumber">[line 169]</span></h3>
+	<h3>method __construct1 <span class="smalllinenumber">[line 137]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1907,7 +1606,7 @@ $divName)</code>
   </div>
   <hr />
 	<a name="method__construct2"></a>
-	<h3>method __construct2 <span class="smalllinenumber">[line 181]</span></h3>
+	<h3>method __construct2 <span class="smalllinenumber">[line 149]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1940,7 +1639,7 @@ $bingIDorProperties)</code>
   </div>
   <hr />
 	<a name="method__construct3"></a>
-	<h3>method __construct3 <span class="smalllinenumber">[line 201]</span></h3>
+	<h3>method __construct3 <span class="smalllinenumber">[line 169]</span></h3>
 	<div class="function">
     <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
     <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
@@ -1982,7 +1681,7 @@ $bingID)</code>
 
         <div class="credit">
 		    <hr />
-		    Documentation generated on Tue, 30 Nov 2010 10:43:04 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Wed, 17 Nov 2010 16:45:29 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>

@@ -65,16 +65,14 @@
 				<dd>in file IPersistenceHandler.php, variable <a href="Msft/Bing/Msft_Bing_Column.html#var$AllowNull">Msft_Bing_Column::$AllowNull</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Is nullable column?</dd>
 							<dt><b>$AutoIncrement</b></dt>
 				<dd>in file IPersistenceHandler.php, variable <a href="Msft/Bing/Msft_Bing_Column.html#var$AutoIncrement">Msft_Bing_Column::$AutoIncrement</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Is auto increment column?</dd>
-							<dt><b>addLayer</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodaddLayer">Msft_Bing_Map::addLayer()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Display the given HTML control on the map.</dd>
+							<dt><b>addControl</b></dt>
+				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodaddControl">Msft_Bing_Map::addControl()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Display the given HTML control on the map.</dd>
 							<dt><b>addPushpinAddress</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodaddPushpinAddress">Msft_Bing_Map::addPushpinAddress()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Add a pushpin on the map at the specified address</dd>
 							<dt><b>addPushpinLatLon</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodaddPushpinLatLon">Msft_Bing_Map::addPushpinLatLon()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Add a pushpin on the map at the specified location</dd>
 							<dt><b>addPushpinPushpin</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodaddPushpinPushpin">Msft_Bing_Map::addPushpinPushpin()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Add pushpins from the details available in the Pushpin object</dd>
-							<dt><b>attachDetails</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodattachDetails">Msft_Bing_Map::attachDetails()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Displays text boxes on the map to allow users to specify title and description for a pushpin</dd>
 					</dl>
 	</div>
 	<a href="elementindex.html#top">top</a><br>
@@ -101,8 +99,6 @@
 				<dd>in file Map.php, variable <a href="Msft/Bing/Msft_Bing_Map.html#var$configDetails">Msft_Bing_Map::$configDetails</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Configuration properties</dd>
 							<dt><b>$connection</b></dt>
 				<dd>in file MySQLPersistenceHandler.php, variable <a href="Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#var$connection">Msft_Bing_MySQLPersistenceHandler::$connection</a><br>&nbsp;&nbsp;&nbsp;&nbsp;MySQL connection string</dd>
-							<dt><b>$content_type</b></dt>
-				<dd>in file Map.php, variable <a href="Msft/Bing/Msft_Bing_MapProperties.html#var$content_type">Msft_Bing_MapProperties::$content_type</a></dd>
 							<dt><b>createConfigurationEntity</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodcreateConfigurationEntity">Msft_Bing_Map::createConfigurationEntity()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Define Bing Maps Configuration entity schema and call persitenceHandler.CreateEntity() to create it</dd>
 							<dt><b>createEntity</b></dt>
@@ -133,20 +129,18 @@
 				<dd>in file Map.php, variable <a href="Msft/Bing/Msft_Bing_Pushpin.html#var$description">Msft_Bing_Pushpin::$description</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Description of the pushpin</dd>
 							<dt><b>$divName</b></dt>
 				<dd>in file Map.php, variable <a href="Msft/Bing/Msft_Bing_Map.html#var$divName">Msft_Bing_Map::$divName</a><br>&nbsp;&nbsp;&nbsp;&nbsp;ID of HTML element which will hold the map</dd>
-							<dt><b>deletePinGraphical</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methoddeletePinGraphical">Msft_Bing_Map::deletePinGraphical()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Remove an existing pushpin pointed by the mouse</dd>
-							<dt><b>deleteRows</b></dt>
-				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddeleteRows">Msft_Bing_IPersistenceHandler::deleteRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Delete entity rows which match the given filter  If $whereFilter is null or empty, all rows in the entity will be deleted</dd>
 							<dt><b>deleteRows</b></dt>
 				<dd>in file MySQLPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoddeleteRows">Msft_Bing_MySQLPersistenceHandler::deleteRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Delete entity rows which match the given filter  If $whereFilter is null or empty, all rows in the entity will be deleted</dd>
+							<dt><b>deleteRows</b></dt>
+				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddeleteRows">Msft_Bing_IPersistenceHandler::deleteRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Delete entity rows which match the given filter  If $whereFilter is null or empty, all rows in the entity will be deleted</dd>
 							<dt><b>displayLoadedPushpins</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methoddisplayLoadedPushpins">Msft_Bing_Map::displayLoadedPushpins()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Display the pushpins loaded from the database. Internally makes use of the pushpinsToAdd array.</dd>
 							<dt><b>displayMap</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methoddisplayMap">Msft_Bing_Map::displayMap()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Display the map. Uses the javascript methods to achieve this</dd>
 							<dt><b>doesEntityExist</b></dt>
-				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddoesEntityExist">Msft_Bing_IPersistenceHandler::doesEntityExist()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Checks whether the given entity exists or not</dd>
-							<dt><b>doesEntityExist</b></dt>
 				<dd>in file MySQLPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methoddoesEntityExist">Msft_Bing_MySQLPersistenceHandler::doesEntityExist()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Checks whether the given entity exists or not</dd>
+							<dt><b>doesEntityExist</b></dt>
+				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methoddoesEntityExist">Msft_Bing_IPersistenceHandler::doesEntityExist()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Checks whether the given entity exists or not</dd>
 							<dt><b>dropConfigurationEntity</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methoddropConfigurationEntity">Msft_Bing_Map::dropConfigurationEntity()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Call persitenceHandler.DropEntity() method to drop Configuration entity</dd>
 							<dt><b>dropEntity</b></dt>
@@ -179,12 +173,6 @@
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetAddress">Msft_Bing_Map::getAddress()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Write the address corresponding to the given location (latitude and longitude) inside the given textbox</dd>
 							<dt><b>getBingID</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetBingID">Msft_Bing_Map::getBingID()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the Bing Maps portal ID</dd>
-							<dt><b>getBingMapLibPath</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetBingMapLibPath">Msft_Bing_Map::getBingMapLibPath()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the bing map library path</dd>
-							<dt><b>getconfigDetails</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetconfigDetails">Msft_Bing_Map::getconfigDetails()</a></dd>
-							<dt><b>getContentType</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_MapProperties.html#methodgetContentType">Msft_Bing_MapProperties::getContentType()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the content type associated with the map</dd>
 							<dt><b>getCoordinates</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetCoordinates">Msft_Bing_Map::getCoordinates()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Write the location (latitude and longitude) corresponding to the given address inside the given textbox</dd>
 							<dt><b>getCurrentAddress</b></dt>
@@ -209,12 +197,8 @@
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Pushpin.html#methodgetLongitude">Msft_Bing_Pushpin::getLongitude()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the longitude of the pushpin</dd>
 							<dt><b>getMapType</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_MapProperties.html#methodgetMapType">Msft_Bing_MapProperties::getMapType()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the type of the map</dd>
-							<dt><b>getPinDetails</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetPinDetails">Msft_Bing_Map::getPinDetails()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Makes the title and description available for the given pushpin ID.</dd>
 							<dt><b>getProperties</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetProperties">Msft_Bing_Map::getProperties()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the map properties</dd>
-							<dt><b>getpushpinsToAdd</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodgetpushpinsToAdd">Msft_Bing_Map::getpushpinsToAdd()</a></dd>
 							<dt><b>getTitle</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Pushpin.html#methodgetTitle">Msft_Bing_Pushpin::getTitle()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Gets the title of the pushpin</dd>
 							<dt><b>getWidth</b></dt>
@@ -366,17 +350,11 @@
 							<dt><b>savePushpins</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsavePushpins">Msft_Bing_Map::savePushpins()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Call persitenceHandler.InsertRow to save data from pushpinsToAdd array into Pushpins entity</dd>
 							<dt><b>selectRows</b></dt>
-				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodselectRows">Msft_Bing_IPersistenceHandler::selectRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Select rows in the given entity which match the given filter  If $whereFilter is null or empty, all rows in the entity will be returned</dd>
-							<dt><b>selectRows</b></dt>
 				<dd>in file MySQLPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_MySQLPersistenceHandler.html#methodselectRows">Msft_Bing_MySQLPersistenceHandler::selectRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Select rows in the given entity which match the given filter  If $whereFilter is null or empty, all rows in the entity will returned</dd>
+							<dt><b>selectRows</b></dt>
+				<dd>in file IPersistenceHandler.php, method <a href="Msft/Bing/Msft_Bing_IPersistenceHandler.html#methodselectRows">Msft_Bing_IPersistenceHandler::selectRows()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Select rows in the given entity which match the given filter  If $whereFilter is null or empty, all rows in the entity will be returned</dd>
 							<dt><b>setBingID</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetBingID">Msft_Bing_Map::setBingID()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the Bing Maps portal ID used for validating map operations</dd>
-							<dt><b>setBingMapLibPath</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetBingMapLibPath">Msft_Bing_Map::setBingMapLibPath()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the bing map library path</dd>
-							<dt><b>setconfigDetails</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetconfigDetails">Msft_Bing_Map::setconfigDetails()</a></dd>
-							<dt><b>setContentType</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_MapProperties.html#methodsetContentType">Msft_Bing_MapProperties::setContentType()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the content type associated with the map</dd>
 							<dt><b>setCredentials</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetCredentials">Msft_Bing_Map::setCredentials()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Set current BingID as the map credentials</dd>
 							<dt><b>setDefaultLocation</b></dt>
@@ -399,8 +377,6 @@
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_MapProperties.html#methodsetMapType">Msft_Bing_MapProperties::setMapType()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the type of the map</dd>
 							<dt><b>setProperties</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetProperties">Msft_Bing_Map::setProperties()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the properties of the map</dd>
-							<dt><b>setpushpinsToAdd</b></dt>
-				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Map.html#methodsetpushpinsToAdd">Msft_Bing_Map::setpushpinsToAdd()</a></dd>
 							<dt><b>setTitle</b></dt>
 				<dd>in file Map.php, method <a href="Msft/Bing/Msft_Bing_Pushpin.html#methodsetTitle">Msft_Bing_Pushpin::setTitle()</a><br>&nbsp;&nbsp;&nbsp;&nbsp;Sets the title of the pushpin</dd>
 							<dt><b>setWidth</b></dt>
@@ -502,7 +478,7 @@
 	<a href="elementindex.html#top">top</a><br>
         <div class="credit">
 		    <hr />
-		    Documentation generated on Tue, 30 Nov 2010 10:43:03 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+		    Documentation generated on Wed, 17 Nov 2010 16:45:29 +0530 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
 	      </div>
       </td></tr></table>
     </td>

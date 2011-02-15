@@ -9,10 +9,10 @@
  *  
  * @category  Msft
  * @package   Msft
- * @author    Mindtree 
- * @copyright 2011 Mindtree
- * @license    GPL v2 License https://github.com/mindtree/BingMapsPHPSDK
- * @link       https://github.com/mindtree/BingMapsPHPSDK
+ * @author    MindTree 
+ * @copyright 2011 MindTree
+ * @license   GPL v2 License https://github.com/mindtree/BingMapsPHPSDK
+ * @link      https://github.com/mindtree/BingMapsPHPSDK
  * @version   SVN: $Id: Map.php 50 2010-11-10 10:00:00Z cal $
  *
  */
