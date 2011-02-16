@@ -21,7 +21,7 @@ require_once dirname(__FILE__) . "/lib/Msft/Bing/MySQLPersistenceHandler.php";
 
 // initialize MySQL handler
 // change MySQL connection details appropriately
-$handler = new Msft_Bing_MySQLPersistenceHandler('localhost', 'mydb', 'root', '$Aztec123$');
+$handler = new Msft_Bing_MySQLPersistenceHandler('HOSTNAME', 'DATABASENAME', 'USERNAME', 'PASSWORD');
 $handler->initialize();
 
 // check if table exists

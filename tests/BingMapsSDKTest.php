@@ -10,7 +10,7 @@
  * @category  Msft
  * @package   Msft
  * @author    Mindtree 
- * @copyright 011 Mindtree
+ * @copyright 2011 Mindtree
  * @license   GPL v2 License https://github.com/mindtree/BingMapsPHPSDK
  * @version   SVN: $Id: Map.php 50 2010-11-10 10:00:00Z cal $
  * @link      https://github.com/mindtree/BingMapsPHPSDK
@@ -20,8 +20,8 @@
 	require_once dirname(__FILE__) . "/lib/Msft/Bing/Map/Map.php";
 	require_once dirname(__FILE__) . "/lib/Msft/Bing/MySQLPersistenceHandler.php";
 	
-	$bingObj = new Msft_Bing_Map('aravind');
-	$handler = new Msft_Bing_MySQLPersistenceHandler('localhost', 'mydb', 'root', '$Aztec123$');
+	$bingObj = new Msft_Bing_Map('mymap');
+	$handler = new Msft_Bing_MySQLPersistenceHandler('HOSTNAME', 'DATABASENAME', 'USERNAME', 'PASSWORD');
   	$bingObj->registerPersistenceHandler($handler);
 	
   	$bingObj->createConfigurationEntity();
@@ -30,7 +30,7 @@
 	// check if configuration was loaded in database
 	if ($configResult == false)
 	{
-		$bingObj->setBingID('AjDSyPn4OPBYDEjOjZp19n3dGzLNBFes_W5gb-oOF_jdO8hmPB1pB9z4RLhH3tac');
+		$bingObj->setBingID('BINGID');
 		$props = new Msft_Bing_MapProperties('600','500','7');
 		$props->setDefaultLocation('Bangalore,India');	
 		$bingObj->setProperties($props);
@@ -116,7 +116,7 @@ if (isset($_POST['listPushpins']))
 	</form>
 	<div class="right" style="float: left; width: 900px;">
 		<div>
-			<div id="aravind" style="position:relative; width:775px; height:600px;"></div>			
+			<div id="mymap" style="position:relative; width:775px; height:600px;"></div>			
 		</div>
 	</div>
 </div>
